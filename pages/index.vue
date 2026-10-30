@@ -24,7 +24,7 @@ const toggleAccordion = (index) => {
 <template>
   <div class="overflow-hidden">
     <!-- Cinematic Hero Section -->
-    <section class="relative h-[90vh] flex items-center justify-center overflow-hidden bg-[#fcfcfc]">
+    <section class="relative min-h-[90vh] h-auto py-24 flex items-center justify-center overflow-hidden bg-[#fcfcfc]">
       <!-- Slow Pan Background Image -->
       <div 
         class="absolute inset-0 bg-cover bg-center transition-transform duration-[20000ms] ease-out"
@@ -38,7 +38,7 @@ const toggleAccordion = (index) => {
       <div 
         class="relative z-10 py-20 px-4 max-w-5xl mx-auto text-center transition-all duration-[1500ms] ease-out delay-300"
         :class="isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'">
-        <h1 class="font-garamond text-6xl md:text-7xl lg:text-8xl text-novo-gray mb-6 leading-tight">
+        <h1 class="font-garamond text-5xl md:text-7xl lg:text-8xl text-novo-gray mb-6 leading-tight">
           Where Capital Meets <br>
           <span class="text-novo-teal italic">Climate</span> Integrity.
         </h1>
